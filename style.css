@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1f4b70;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    background-color: #254d8b;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f3f9ff;
+}
+
+.main-content h2 {
+    color: #1f4b70;
+    margin-bottom: 20px;
+}
+
+.course-outcome, .co-po-mapping, .mapped-data {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.course-outcome input, .co-po-mapping select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #254d8b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4b70;
+}
+
+.mapped-data h3 {
+    margin-bottom: 10px;
+}
+
+.mapped-data #mappedDataList {
+    padding: 10px;
+    background-color: #e8f4ff;
+    border-radius: 4px;
+}

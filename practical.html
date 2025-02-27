@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #e3e3e3;
+        }
+        select {
+            width: 60px;
+            padding: 5px;
+        }
+        .comments-section {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            resize: vertical;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .submit-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Faculty Feedback Form</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Questions / Faculty</th>
+                <th>AI LAB BTCOL707 - Prof. V.G Kakade</th>
+                <th>CC LAB BTCOL707 - Prof. V.C Lad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. List of experiments/practicals discussed and displayed</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>2. The teacher has full knowledge of the experiments/lab equipment</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>3. Each student gets a chance to perform the experiment on her own</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>4. The teacher guides during lab hours</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>5. The teacher is available for the complete two hours</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>6. Lab manual is available</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>7. The manual/files were checked timely with proper marking or grading</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+            <tr>
+                <td>8. Proportionate experiments are completed as per plan</td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+                <td><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="comments-section">
+        <label for="comments">Any Comments / Suggestions:</label>
+        <textarea id="comments" rows="4" placeholder="Write your comments here..."></textarea>
+    </div>
+
+    <div class="submit-section">
+        <button type="submit">Submit Feedback</button>
+    </div>
+</div>
+
+</body>
+</html>

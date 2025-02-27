@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form - For Theory</h2>
+
+        <!-- Selection Panel -->
+        <div class="selection-panel">
+            <label for="classSelect">Class:</label>
+            <select id="classSelect">
+                <option value="AI">AI</option>
+                <option value="BCT">BCT</option>
+                <option value="CC">CC</option>
+                <option value="DL">DL</option>
+                <option value="BDA">BDA</option>
+            </select>
+
+            <label for="idSelect">ID:</label>
+            <select id="idSelect">
+                <option value="BTC701">BTC701</option>
+                <option value="BTC702">BTC702</option>
+                <option value="BTC703">BTC703</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button onclick="showFeedbackForm()">Search</button>
+        </div>
+
+        <!-- Feedback Table -->
+        <div id="feedbackForm" class="feedback-table" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Questions / Faculty</th>
+                        <th>AI BTC701 Prof. V.G Kakade</th>
+                        <th>BCT BTC704C Prof. P.S Pandhre</th>
+                        <th>CC BTC702 Prof. V.C Lud</th>
+                        <th>DL BTC705B Prof. F.S Birjdar</th>
+                        <th>BDA BTC703C Prof. P.V Tel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Punctuality</td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Knowledge of the subject</td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                        <td><select><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select></td>
+                    </tr>
+                    <!-- Add more rows for additional questions -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

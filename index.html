@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO-PO Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>Dashboard</li>
+            <li>Attendance</li>
+            <li class="active">CO-PO</li>
+            <li>Syllabus</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>CO-PO Management</h2>
+        
+        <div class="course-outcome">
+            <h3>Course Outcome</h3>
+            <input type="text" id="courseNo" placeholder="Course No">
+            <input type="text" id="coText" placeholder="Text">
+            <button onclick="addCO()">Add CO</button>
+        </div>
+        
+        <div class="co-po-mapping">
+            <h3>CO-PO Mapping</h3>
+            <select id="coSelect"></select>
+            <select id="poSelect">
+                <option>PO1 -  To provide knowledge of sound mathematical principles underlying various programming concepts.</option>
+                <option>PO2 -  To develop an ability to understand complex issues in the analysis, design, implementation and operation of information systems.</option>
+                <option>PO3 -  To provide knowledge of mechanisms for building large-scale computer-based systems.</option>
+                <option>PO4 -  To develop an ability to provide computer-based solutions to the problems from other disciplines of science and engineering.</option>
+                <option>PO5 -  To impart skills necessary for adapting rapid changes taking place in the field of information and communication technologies</option>
+                <option>PO6 -  To provide knowledge of ethical issues arising due to deployment of information and communication technologies in the society on large scale</option>
+            </select>
+            <select id="levelSelect">
+                <option>Low</option>
+                <option>Moderate</option>
+                <option>High</option>
+            </select>
+            <button onclick="mapCOPo()">Map CO-PO</button>
+        </div>
+        
+        <div class="mapped-data">
+            <h3>Mapped Data</h3>
+            <div id="mappedDataList"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
